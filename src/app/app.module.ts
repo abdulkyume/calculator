@@ -6,19 +6,17 @@ import { AppComponent } from './app.component';
 import { CalculatorComponent } from './components/calculator/calculator.component';
 import { CalculatorInputComponent } from './components/calculator-input/calculator-input.component';
 import { CalculatorOutputComponent } from './components/calculator-output/calculator-output.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
     AppComponent,
     CalculatorComponent,
     CalculatorInputComponent,
-    CalculatorOutputComponent
+    CalculatorOutputComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+  imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

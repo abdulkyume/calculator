@@ -1,1 +1,16 @@
-<p>calculator works!</p>
+<div class="container">
+  <div class="row vh-100 justify-content-center align-items-center">
+    <div class="col-lg-12 col-md-12 col-12">
+      <app-calculator-input></app-calculator-input>
+      <app-calculator-output></app-calculator-output>
+      <div class="bg-black">
+        <button
+          *ngFor="let button of buttons"
+          class="btn btn-dark font-white m-3 btn-lg"
+        >
+          {{ button.name }}
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
